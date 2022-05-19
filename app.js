@@ -1,7 +1,7 @@
 // Form Blur Event Listeners
-document.getElementById('username').addEventListener('blur', validateName);
-document.getElementById('ip').addEventListener('blur', validateIP);
-document.getElementById('email').addEventListener('blur', validateEmail);
+//document.getElementById('username').addEventListener('blur', validateName);
+//document.getElementById('ip').addEventListener('blur', validateIP);
+//document.getElementById('email').addEventListener('blur', validateEmail);
 element.addEventListener("submit", submitFunction);
 //document.getElementById('phone').addEventListener('blur', validatePhone);
 
