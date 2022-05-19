@@ -5,7 +5,7 @@ document.getElementById('email').addEventListener('blur', validateEmail);
 //document.getElementById('phone').addEventListener('blur', validatePhone);
 
 function validateName() {
-    const name = document.getElementById('name');
+    const name = document.getElementById('username');
     const re = /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$/;
     
     if(!re.test(name.value)) {
@@ -17,7 +17,7 @@ function validateName() {
     }
 }
 function validateIP() {
-    const ip = document.getElementById('zip');
+    const ip = document.getElementById('ip');
     const re = /^(?=.*[^\.]$)((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.?){4}$/gmi;
 
     if(!re.test(zip.value)) {
