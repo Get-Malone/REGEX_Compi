@@ -5,10 +5,10 @@ document.getElementById('email').addEventListener('blur', validateEmail);
 //document.getElementById('phone').addEventListener('blur', validatePhone);
 
 function validateName() {
-    const name = document.getElementById('username');
+    const username = document.getElementById('username');
     const re = /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$/;
     
-    if(!re.test(name.value)) {
+    if(!re.test(username.value)) {
         window.alert("Kgaste");
         //name.classList.add('is-invalid');
     } else {
@@ -20,7 +20,7 @@ function validateIP() {
     const ip = document.getElementById('ip');
     const re = /^(?=.*[^\.]$)((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.?){4}$/gmi;
 
-    if(!re.test(zip.value)) {
+    if(!re.test(ip.value)) {
         //zip.classList.add('is-invalid');
         window.alert("Kgaste");
     } else {
