@@ -19,10 +19,12 @@ function validateZip() {
     const re = /^(?=.*[^\.]$)((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.?){4}$/gmi;
 
     if(!re.test(zip.value)) {
-        zip.classList.add('is-invalid');
+        //zip.classList.add('is-invalid');
+        window.alert("Kgaste");
     } else {
-        zip.classList.remove('is-invalid');
-        zip.classList.add('is-valid');
+        window.alert("NO Kgaste");
+        //zip.classList.remove('is-invalid');
+        //zip.classList.add('is-valid');
     }
 }
 function validateEmail() {
