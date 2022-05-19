@@ -6,7 +6,7 @@ document.getElementById('phone').addEventListener('blur', validatePhone);
 
 function validateName() {
     const name = document.getElementById('name');
-    const re = /^[a-zA-Z]{2,10}$/;
+    const re = /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$/;
     
     if(!re.test(name.value)) {
         name.classList.add('is-invalid');
@@ -16,7 +16,7 @@ function validateName() {
 }
 function validateZip() {
     const zip = document.getElementById('zip');
-    const re = /^[0-9]{5}(-[0-9]{4})?$/;
+    const re = /^(?=.*[^\.]$)((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.?){4}$/gmi;
 
     if(!re.test(zip.value)) {
         zip.classList.add('is-invalid');
@@ -27,7 +27,7 @@ function validateZip() {
 }
 function validateEmail() {
     const email = document.getElementById('email');
-    const re = /^([a-zA-Z0-9_\.\-]+)@([a-zA-Z0-9_\.\-]+)\.([a-zA-Z]{2,5})$/;
+    const re = /^([a-z0-9_\.-]+\@[\da-z\.-]+\.[a-z\.]{2,6})$/gm;
 
     if(!re.test(email.value)) {
         email.classList.add('is-invalid');
