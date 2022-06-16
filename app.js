@@ -8,7 +8,7 @@ function submitFunction() {
     const email = document.getElementById('email');
     const ip = document.getElementById('ip');
     const rfc = document.getElementById('rfc');
-    const  num = document.getElementById('rfc');
+    const  num = document.getElementById('num');
 
     const re = /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$/;
     const re2 = /^(?=.*[^\.]$)((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.?){4}$/gmi;
@@ -38,7 +38,7 @@ function submitFunction() {
     } else {
         window.alert(rfc.value + " Es valido");
     }
-    if(!re4.test(num.value)) {
+    if(!re5.test(num.value)) {
         window.alert(num.value + " No es valido");
     } else {
         window.alert(num.value + " Es valido");
