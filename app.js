@@ -7,7 +7,7 @@ function submitFunction() {
     const username = document.getElementById('username');
     const email = document.getElementById('email');
     const ip = document.getElementById('ip');
-    const regex = '/'+document.getElementById('regex')+'/';
+    const regex = document.getElementById('regex');
     const regexing = document.getElementById('regexin');
 
     const re = /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$/;
